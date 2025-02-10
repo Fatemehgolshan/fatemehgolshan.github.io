@@ -3,49 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad's Homepage</title>
+    <title>Fatemeh Golshan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #222;
+            border-radius: 8px;
         }
-        h1 {
-            color: #333;
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
         }
-        p {
-            color: #555;
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
-        .links a {
-            display: inline-block;
-            margin: 10px;
+        .header h1 {
+            margin: 0;
+        }
+        .about, .news, .research {
+            margin-top: 20px;
+        }
+        .link {
+            color: #4da3ff;
             text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
         }
-        .links a:hover {
+        .link:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Mohammad's Homepage</h1>
-        <p>This is my personal space on the web. Here you can find links to my work and projects.</p>
-        <div class="links">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a href="mailto:your.email@example.com">Contact Me</a>
+        <div class="header">
+            <img src="profile.jpg" alt="Fatemeh Golshan">
+            <div>
+                <h1>Fatemeh Golshan</h1>
+                <p>PhD student of Computer Science at the University of Pittsburgh.</p>
+                <p>
+                    📍 Washington, D.C. <br>
+                    📧 <a href="mailto:fateme.gol92@gmail.com" class="link">fateme.gol92@gmail.com</a> | 
+                    🐦 Twitter | 
+                    💼 <a href="https://www.linkedin.com/in/fatemeh-golshan-6a7b709b/" class="link">LinkedIn</a> | 
+                    🖥️ <a href="https://fatemehgolshan.github.io" class="link">Repository</a> | 
+                    🎓 <a href="https://scholar.google.com/citations?hl=en&user=hySnyckAAAAJ" class="link">Google Scholar</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="about">
+            <h2>About me</h2>
+            <p>I am a 3rd year PhD student in the <a href="#" class="link">Department of Computer Science</a> at the 
+                <a href="#" class="link">University of Pittsburgh</a>. My research interests are in Computer Architecture, Computer Systems, and Embedded Systems. 
+                Prior to joining Pitt, I received my B.Sc. in Electrical and Computer Engineering from 
+                <a href="#" class="link">Isfahan University of Technology</a> and my M.S. in Computer Engineering from 
+                <a href="#" class="link">Sharif University of Technology</a>.
+            </p>
+        </div>
+
+        <div class="news">
+            <h2>News</h2>
+            <ul>
+                <li>[Jan 2025] Our paper <a href="#" class="link">APTP</a> is accepted at <a href="#" class="link">ICLR 2025</a>.</li>
+            </ul>
+        </div>
+        
+        <div class="research">
+            <h2>Research Highlights</h2>
+            <p>
+                <a href="#" class="link">Blenda: Dynamically-Reconfigurable Stacked DRAM</a>
+                <br><strong>Fatemeh Golshan</strong>, M. Bakhshalipour, H. Zare, F. Sarmadi, P. Lotfi-Kamran, H. Sarbazi-Azad
+            </p>
+            <p>
+                <a href="#" class="link">Code</a> | <a href="#" class="link">PDF</a>
+            </p>
         </div>
     </div>
 </body>
