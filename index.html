@@ -3,93 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatemeh Golshan</title>
+    <title>Mohammad's Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #181818;
-            color: #fff;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
             padding: 20px;
-            background: #222;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .header {
-            display: flex;
-            align-items: center;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
+        h1 {
+            color: #333;
         }
-        .header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-right: 20px;
+        p {
+            color: #555;
         }
-        .header h1 {
-            margin: 0;
-        }
-        .about, .news, .research {
-            margin-top: 20px;
-        }
-        .link {
-            color: #4da3ff;
+        .links a {
+            display: inline-block;
+            margin: 10px;
             text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
         }
-        .link:hover {
+        .links a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="profile.jpg" alt="Fatemeh Golshan">
-            <div>
-                <h1>Fatemeh Golshan</h1>
-                <p>PhD student of Computer Science at the University of Pittsburgh.</p>
-                <p>
-                    📍 Washington, D.C. <br>
-                    📧 <a href="mailto:fateme.gol92@gmail.com" class="link">fateme.gol92@gmail.com</a> | 
-                    🐦 Twitter | 
-                    💼 <a href="https://www.linkedin.com/in/fatemeh-golshan-6a7b709b/" class="link">LinkedIn</a> | 
-                    🖥️ <a href="https://fatemehgolshan.github.io" class="link">Repository</a> | 
-                    🎓 <a href="https://scholar.google.com/citations?hl=en&user=hySnyckAAAAJ" class="link">Google Scholar</a>
-                </p>
-            </div>
+        <h1>Welcome to Mohammad's Homepage</h1>
+        <p>This is my personal space on the web. Here you can find links to my work and projects.</p>
+        <p>📍 Pittsburgh</p>
+        <div class="links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Contact Me</a>
         </div>
         
-        <div class="about">
-            <h2>About me</h2>
-            <p>I am a 3rd year PhD student in the <a href="#" class="link">Department of Computer Science</a> at the 
-                <a href="#" class="link">University of Pittsburgh</a>. My research interests are in Computer Architecture, Computer Systems, and Embedded Systems. 
-                Prior to joining Pitt, I received my B.Sc. in Electrical and Computer Engineering from 
-                <a href="#" class="link">Isfahan University of Technology</a> and my M.S. in Computer Engineering from 
-                <a href="#" class="link">Sharif University of Technology</a>.
-            </p>
-        </div>
-
         <div class="news">
             <h2>News</h2>
             <ul>
-                <li>[Jan 2025] Our paper <a href="#" class="link">APTP</a> is accepted at <a href="#" class="link">ICLR 2025</a>.</li>
+                <li>[May 2024] I joined as a Hardware Engineer Intern at Qualcomm.</li>
+                <li>[November 2025] Our paper "Blenda: Dynamically-Reconfigurable Stacked DRAM" is accepted in Proceedings of the International Symposium on Microarchitecture (MICRO 2024). <a href="https://ieeexplore.ieee.org/abstract/document/10764446" target="_blank">Read more</a></li>
             </ul>
         </div>
-        
+
         <div class="research">
-            <h2>Research Highlights</h2>
-            <p>
-                <a href="#" class="link">Blenda: Dynamically-Reconfigurable Stacked DRAM</a>
-                <br><strong>Fatemeh Golshan</strong>, M. Bakhshalipour, H. Zare, F. Sarmadi, P. Lotfi-Kamran, H. Sarbazi-Azad
-            </p>
-            <p>
-                <a href="#" class="link">Code</a> | <a href="#" class="link">PDF</a>
-            </p>
+            <h2>Publications</h2>
+            <ul>
+                <li>M. Bakhshalipour, H.Zare, F.Sarmadi, F. Golshan, P. Lotfi-Kamran, and H. Sarbazi-Azad, "Blenda: Dynamically-Reconfigurable Stacked DRAM," in MICRO, 2024. <a href="https://ieeexplore.ieee.org/abstract/document/10764446" target="_blank">Link</a></li>
+                <li>A. Ansari, F. Golshan, R. Barati, P. Lotfi-Kamran, and H. Sarbazi-Azad, "MANA: Microarchitecting a Temporal Instruction Prefetcher," in IEEE TC, 2022. <a href="https://ieeexplore.ieee.org/abstract/document/9779921" target="_blank">Link</a></li>
+                <li>M. Shakernava, F. Golshan, A. Ansari, P. Lotfi-Kamran, and H. Sarbazi-Azad, "Evaluation of Data Prefetchers," in Elsevier, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S0065245821000826" target="_blank">Link</a></li>
+                <li>F. Golshan, M. Bakhshalipour, M. Shakerinava, A. Ansari, P. Lotfi-Kamran, and H. Sarbazi-Azad, "Harnessing Pairwise-Correlating Data Prefetching with Runahead Metadata," in IEEE CAL, 2020. <a href="https://ieeexplore.ieee.org/abstract/document/9177277" target="_blank">Link</a></li>
+                <li>A. Ansari, F. Golshan, P. Lotfi-Kamran, and H. Sarbazi-Azad, "MANA: Microarchitecting an Instruction Prefetcher," in ISCA, 2020. <a href="https://research.ece.ncsu.edu/wp-content/uploads/sites/19/2020/05/mana.pdf" target="_blank">Link</a></li>
+            </ul>
         </div>
     </div>
 </body>
