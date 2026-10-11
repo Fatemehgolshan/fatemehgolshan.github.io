@@ -122,6 +122,7 @@
 
     .portrait {
       width: 216px;
+      height: 252px;
       aspect-ratio: 0.86;
       margin-top: 5px;
       border-radius: 3px;
@@ -189,6 +190,7 @@
     }
 
     .section-content { min-width: 0; }
+
     .section-content > p:first-child { margin-top: 0; }
 
     .section-content p {
@@ -247,15 +249,12 @@
       line-height: 1.5;
     }
 
-    .role-place,
-    .role-detail {
+    .role-place {
       margin: 2px 0 0;
       color: var(--muted);
       font-size: 13px;
       line-height: 1.55;
     }
-
-    .role-detail { grid-column: 1 / -1; max-width: 780px; }
 
     .site-footer {
       padding: 22px 0 35px;
@@ -271,16 +270,7 @@
       .navigation a { font-size: 12px; }
       .hero { padding-block: 43px 52px; }
       .hero-grid { grid-template-columns: minmax(0, 1fr) 150px; gap: 22px; }
-      .portrait {
-  width: 216px;
-  height: 252px;
-  aspect-ratio: 0.86;
-  margin-top: 5px;
-  border-radius: 3px;
-  object-fit: cover;
-  object-position: 50% 39%;
-  background: #e8e5e0;
-}
+      .portrait { width: 150px; height: 175px; }
       .section { padding-block: 36px 40px; }
       .section-grid { grid-template-columns: 1fr; gap: 17px; }
     }
@@ -290,7 +280,12 @@
       .navigation { justify-content: flex-start; margin-top: 11px; gap: 18px; }
       .hero { padding-top: 34px; }
       .hero-grid { grid-template-columns: 1fr; gap: 25px; }
-      .portrait { width: min(190px, 58vw); aspect-ratio: 1 / 1; margin: 0; }
+      .portrait {
+        width: min(190px, 58vw);
+        height: min(190px, 58vw);
+        aspect-ratio: 1 / 1;
+        margin: 0;
+      }
       h1 { font-size: 42px; }
       .subtitle { margin-bottom: 20px; }
       .news-item { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
@@ -298,7 +293,6 @@
       .education-item { grid-template-columns: 1fr; gap: 2px; }
       .experience-item .date,
       .education-item .date { grid-row: 1; }
-      .role-detail { grid-column: auto; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -314,7 +308,7 @@
       <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="Fatemeh_Golshan_CV__Version_744___1_.pdf">CV</a>
+      <a href="cv.pdf">CV</a>
     </nav>
   </header>
 
@@ -368,8 +362,8 @@
               <span>Performance Modeling Consultant at Qualcomm, extending memory-controller models for DDR5, LPDDR5, and LPDDR6.</span>
             </li>
             <li class="news-item">
-              <time class="date" datetime="2024-05">May–Aug 2024</time>
-              <span>Hardware Engineering Intern at Qualcomm, modeling memory controllers and evaluating LPDDR6 Static Efficiency Mode.</span>
+              <time class="date" datetime="2024-05">May 2024</time>
+              <span>Excited to start my hardware engineering internship at Qualcomm!</span>
             </li>
           </ul>
         </div>
@@ -385,7 +379,6 @@
               <div>
                 <h3 class="role-title">Hardware Engineering Intern</h3>
                 <p class="role-place">Cisco · San Jose, California</p>
-                <p class="role-detail">Cycle-level simulation for next-generation ASIC architectures, multicast modes, and Ethernet Scale-Up Networking workloads.</p>
               </div>
               <time class="date" datetime="2026-06">Jun – Sep 2026</time>
             </li>
@@ -393,7 +386,6 @@
               <div>
                 <h3 class="role-title">Software Engineering Intern</h3>
                 <p class="role-place">Google · Sunnyvale, California</p>
-                <p class="role-detail">Built an AI-assisted on-call tool and a data pipeline to support root-cause analysis for large-scale compute infrastructure.</p>
               </div>
               <time class="date" datetime="2026-03">Mar – Jun 2026</time>
             </li>
@@ -401,7 +393,6 @@
               <div>
                 <h3 class="role-title">Hardware Engineering Intern</h3>
                 <p class="role-place">Cisco · San Jose, California</p>
-                <p class="role-detail">Modeled multicast replication and load balancing across multi-stage switch fabrics for the Palladium 2 platform.</p>
               </div>
               <time class="date" datetime="2025-05">May – Aug 2025</time>
             </li>
@@ -409,7 +400,6 @@
               <div>
                 <h3 class="role-title">Performance Modeling Consultant</h3>
                 <p class="role-place">Qualcomm · Santa Clara, California</p>
-                <p class="role-detail">Extended memory-controller performance and power models for DDR5, LPDDR5, and LPDDR6.</p>
               </div>
               <time class="date" datetime="2024-09">Sep – Dec 2024</time>
             </li>
@@ -417,7 +407,6 @@
               <div>
                 <h3 class="role-title">Hardware Engineering Intern</h3>
                 <p class="role-place">Qualcomm · San Diego, California</p>
-                <p class="role-detail">Built memory-controller models and evaluated LPDDR6 Static Efficiency Mode.</p>
               </div>
               <time class="date" datetime="2024-05">May – Aug 2024</time>
             </li>
@@ -435,7 +424,6 @@
               <div>
                 <h3 class="role-title">Ph.D. in Computer Science</h3>
                 <p class="role-place">University of Pittsburgh</p>
-                <p class="role-detail">Research areas: computer architecture, computer systems, and memory systems.</p>
               </div>
               <time class="date" datetime="2022">Aug 2022 – present</time>
             </li>
@@ -443,7 +431,6 @@
               <div>
                 <h3 class="role-title">M.S. in Computer Engineering</h3>
                 <p class="role-place">Sharif University of Technology</p>
-                <p class="role-detail">Major in Computer Architecture. Thesis: “Improving the Accuracy of Data Prefetching via Depth Estimation.”</p>
               </div>
               <time class="date" datetime="2020">Aug 2018 – Aug 2020</time>
             </li>
@@ -451,7 +438,6 @@
               <div>
                 <h3 class="role-title">B.S. in Electrical and Computer Engineering</h3>
                 <p class="role-place">Isfahan University of Technology</p>
-                <p class="role-detail">Major in Hardware Engineering.</p>
               </div>
               <time class="date" datetime="2018">Sep 2013 – Jan 2018</time>
             </li>
